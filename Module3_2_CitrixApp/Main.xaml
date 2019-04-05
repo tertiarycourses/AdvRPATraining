@@ -1,0 +1,240 @@
+﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Main_1"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:ui="http://schemas.uipath.com/workflow/activities"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Plugin.Workflow</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:WorkflowViewState.IdRef="Sequence_7">
+    <Sequence DisplayName="Image Click Start App" sap2010:WorkflowViewState.IdRef="Sequence_13">
+      <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window '172291071 Vwrcdeskt'" sap2010:WorkflowViewState.IdRef="WindowScope_4" InformativeScreenshot="89a29b592dc419255210d07de2f78725" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' omit:title='172.29.107.101 (asus-fx502) - VNC Viewer' /&gt;">
+        <ui:WindowScope.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_DOUBLE" DisplayName="Click Image 'client 172.29.107.101'" sap2010:WorkflowViewState.IdRef="ClickImage_6" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                <ui:ClickImage.CursorPosition>
+                  <ui:CursorPosition OffsetX="0" OffsetY="1" Position="Center" />
+                </ui:ClickImage.CursorPosition>
+                <ui:ClickImage.Image>
+                  <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" TargetImageBase64="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" />
+                </ui:ClickImage.Image>
+                <ui:ClickImage.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" WaitForReady="INTERACTIVE" />
+                </ui:ClickImage.Target>
+              </ui:ClickImage>
+            </Sequence>
+          </ActivityAction>
+        </ui:WindowScope.Body>
+      </ui:WindowScope>
+    </Sequence>
+    <Sequence DisplayName="Image">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="ui:GenericValue" Name="CopySelectedText" />
+      </Sequence.Variables>
+      <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window '172291071 Vwrcdeskt'" InformativeScreenshot="1f0578a1676c76942bd1d94d8719b115" Selector="&lt;wnd app='vncviewer.exe' cls='vwr::CDesktopWin' title='172.29.107.101 (asus-fx502) - VNC Viewer' /&gt;">
+        <ui:WindowScope.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do">
+              <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'client 172.29.107.101'" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                <ui:ClickImage.CursorPosition>
+                  <ui:CursorPosition OffsetX="65" OffsetY="18" Position="TopRight" />
+                </ui:ClickImage.CursorPosition>
+                <ui:ClickImage.Image>
+                  <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" TargetImageBase64="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" />
+                </ui:ClickImage.Image>
+                <ui:ClickImage.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" WaitForReady="INTERACTIVE" />
+                </ui:ClickImage.Target>
+                <sap2010:WorkflowViewState.IdRef>ClickImage_8</sap2010:WorkflowViewState.IdRef>
+              </ui:ClickImage>
+              <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Type Into 'client 172.29.107.101'" EmptyField="False" SendWindowMessages="False" SimulateType="False" Text="chwee">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="42feccaa9de1d02e734bd73e1658fafc" Selector="&lt;ctrl name='172.29.107.101 (asus-fx502) - VNC Viewer' role='client' /&gt;" WaitForReady="INTERACTIVE" />
+                </ui:TypeInto.Target>
+                <sap2010:WorkflowViewState.IdRef>TypeInto_8</sap2010:WorkflowViewState.IdRef>
+              </ui:TypeInto>
+              <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'client 172.29.107.101'" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                <ui:ClickImage.CursorPosition>
+                  <ui:CursorPosition OffsetX="84" OffsetY="12" Position="TopRight" />
+                </ui:ClickImage.CursorPosition>
+                <ui:ClickImage.Image>
+                  <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD4AAAAdCAYAAADy+d/cAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPXSURBVFhH7dZbT5tlAMBxP4NfwUiikyxZvIGxuUVjhi5kcTrYXDkqIAUGDDA0jAwCKxWBDug4ZQ4UoawcBpRyRii0UKD0BGV0paRQzofyDf6+XugVCTckNLYX/6v3eZP39z6HPO+dnJzgjwXg/lYAftF5vcccHR1z7PXiPeX5eecDcC8nBxts2oZQto6iNTrZOXXc+XahcO+2HcvsJF2v+zGMVJKZVUdz3yIbp4w97y4WvrmIfriHOoUS7aCMFHE1L98s4D5l7Hl3Nvx4n8PtVewmPYYZPfoFC5Z3bjb399nZdGJfFmbNYmLBOMecZZmlVQdLFgvGxSWW1jzsHh7j3dtgY8XC4j/v6/TodEYsji08nnUcNhNTY39hHC4j1XfgwkGzZcUxXMjPUcGEfHqJT26JEJWr6DWb0KuryErNIib2Hl+GXyNMlEpysQxxnIjwO2LELzTMOrc5MnXR/UTEt1eC+TjoEkFBX/O9dJz+yVF6mxSkp1UxqC4l2XfgHt5qO3gpFlHUrOQPlYr2liqKpRXkl9TT+VsesRE/kF5QgaK+mMyHD7kvKkBW18jzCinJwp5tn1hmY2OV1fkJxnt7eKNqo7teQvxPCqoVNTTUSHnwQEpfn5Qkn4HvLDDxSsJ3H3zI9W9EREXHEB15m8+vfcWtOymUVOYTG11MTesQcwYVldk5pDxqQD01zmhPPekpcpoGTLjcRuYGfqe68AlJCXEk3PuM4JsZSGSl1PgkfH0cTWUqV9+/QnhsPDGJiSQmJpGUlE1BYQnVdcKsPqqntX+aVWs3z58+I7ewC515mmlNgwAv59XAKGMdtTRIsslJyST5xwQS79/g8g0BXir1UbhHz1htIVGX46gzuHDsHnC4KxxIyzaMuhHGO8rIym6gTfMvXEpuUTf6/+C/CPAm5OJM4YwooVljYdvjZneqnLjoEop8Fn7ixjqsQBYRjLioh9HJeczaP6kulZHxuJy2VilpZ8JbUGQWkxf/AoXaxOLCHFO/phFyW0KG78KPOFg3Y1Q+IyMylC9uXiXsrrDkZS20aXVM9FSTX9BM58gs75bU1MvkPC1TY7DNMDvSTF5OLa2j8+i6hP2dIOJuSBjXQ0OJjAjno3AJErmcxka5sH3kDA7KycptpKXf5CMXmKM99lxWpgdf06lSouwbZnhhBcfWFm6HBYPBjsO1yd6OE6vRzNyik81t4QrqsjM7Y2VlfRuP6y3WiSH625W0K5Wo1WpUGuHnmM3YbGa0WjNra2Z0Mzbszi0OTvuOc+5s+P+0ANzfCsD9rQDc3wrA/a0A3N/yU/gJfwMCwrUJB/jyAAAAAABJRU5ErkJggg==" />
+                </ui:ClickImage.Image>
+                <ui:ClickImage.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" WaitForReady="INTERACTIVE" />
+                </ui:ClickImage.Target>
+                <sap2010:WorkflowViewState.IdRef>ClickImage_9</sap2010:WorkflowViewState.IdRef>
+              </ui:ClickImage>
+              <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Type Into 'client 172.29.107.101'" EmptyField="False" SendWindowMessages="False" SimulateType="False" Text="chwee@test.com">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="d9d3ac6e078bb2c93e2445f0d2e04978" Selector="&lt;ctrl name='172.29.107.101 (asus-fx502) - VNC Viewer' role='client' /&gt;" WaitForReady="INTERACTIVE" />
+                </ui:TypeInto.Target>
+                <sap2010:WorkflowViewState.IdRef>TypeInto_9</sap2010:WorkflowViewState.IdRef>
+              </ui:TypeInto>
+              <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'client 172.29.107.101'" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                <ui:ClickImage.CursorPosition>
+                  <ui:CursorPosition OffsetX="3" OffsetY="-3" Position="Center" />
+                </ui:ClickImage.CursorPosition>
+                <ui:ClickImage.Image>
+                  <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" TargetImageBase64="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" />
+                </ui:ClickImage.Image>
+                <ui:ClickImage.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" WaitForReady="INTERACTIVE" />
+                </ui:ClickImage.Target>
+                <sap2010:WorkflowViewState.IdRef>ClickImage_10</sap2010:WorkflowViewState.IdRef>
+              </ui:ClickImage>
+              <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'client 172.29.107.101'" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                <ui:ClickImage.CursorPosition>
+                  <ui:CursorPosition OffsetX="60" OffsetY="17" Position="TopRight" />
+                </ui:ClickImage.CursorPosition>
+                <ui:ClickImage.Image>
+                  <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAACsAAAAgCAYAAACLmoEDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIWSURBVFhH7dXda1JhAMfx/pu66Kb/IIigm6CZUGDRK6M1St16IRJXRBu2IjIyFknGiOVGyNZc3VjDubIUWdPNeXybOt895/gffNtGV3I0Bh5hcC4+PDcPP75Xz3Og2WyyX2ixatFi1aLFqqV7sbKIWM2RWBfYSG5RrZUoba4TWfaz6PPh2+UnEFxlLV9FkhU2/qN7sfU8xZgXx5MJ7M5Fohu/Cc69wKzX03fyFLrtU6+7wOWBEWxTXkJCiUpDUt5qo3uxtSyFyEce3R7D+nSBcNTP95lnXNQZsYxP4HK7cb9/h2vcyuitS5jf/CSSqiApbbWhbqzHQf9VO+6lODlJRq4VKIQ9eJ9f4bjByXwoTVlpq43exu7cq6+RWH7N2cP3mPwWJdm600HvY+UMmdUZ7hwy4PgcYqXestNB72ObObKxWUaOnMY+GyRcadnpoPexUpJUeJLrB6/x9muEmNSy00FvY3fe4nyIPws2dEdtTAfibCpttdHb2KJA4ssrXKYTnBsNsBSvUFfaakPdWPdjDMf6OHO+n0HzEEODJoYHbmJ5+AD3rxLZsqy81Ub3YsXtHyn1A8/UHJ/mIwiZGFH/NC/v32X4hhGjyYTJaME65uSDf4V8Vdrzl9u92KaELNYoFcuUynVEsUGjWiSXTpEUBIRdKdLZAls18d/LsDddjFWfFqsWLVYtWqxatFi1aLFq2UexTf4CnHD+Im2b208AAAAASUVORK5CYII=" />
+                </ui:ClickImage.Image>
+                <ui:ClickImage.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" WaitForReady="INTERACTIVE" />
+                </ui:ClickImage.Target>
+                <sap2010:WorkflowViewState.IdRef>ClickImage_11</sap2010:WorkflowViewState.IdRef>
+              </ui:ClickImage>
+              <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Type Into 'client 172.29.107.101'" EmptyField="False" SendWindowMessages="False" SimulateType="False" Text="%[k(end)d(shift)d(home)u(shift)u(home)]">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="fa7bcbf855e0f0614d6b3ed0f5df0756" Selector="&lt;ctrl name='172.29.107.101 (asus-fx502) - VNC Viewer' role='client' /&gt;" WaitForReady="INTERACTIVE" />
+                </ui:TypeInto.Target>
+                <sap2010:WorkflowViewState.IdRef>TypeInto_10</sap2010:WorkflowViewState.IdRef>
+              </ui:TypeInto>
+              <ui:CopySelectedText DisplayName="Copy selected text" SendWindowMessages="False" TimeoutMS="5000">
+                <ui:CopySelectedText.Result>
+                  <OutArgument x:TypeArguments="ui:GenericValue">[CopySelectedText]</OutArgument>
+                </ui:CopySelectedText.Result>
+                <sap2010:WorkflowViewState.IdRef>CopySelectedText_3</sap2010:WorkflowViewState.IdRef>
+              </ui:CopySelectedText>
+              <WriteLine DisplayName="Write Line" Text="[CopySelectedText]" sap2010:WorkflowViewState.IdRef="WriteLine_3" />
+              <sap2010:WorkflowViewState.IdRef>Sequence_22</sap2010:WorkflowViewState.IdRef>
+            </Sequence>
+          </ActivityAction>
+        </ui:WindowScope.Body>
+        <sap2010:WorkflowViewState.IdRef>WindowScope_7</sap2010:WorkflowViewState.IdRef>
+      </ui:WindowScope>
+      <sap2010:WorkflowViewState.IdRef>Sequence_23</sap2010:WorkflowViewState.IdRef>
+    </Sequence>
+    <sads:DebugSymbol.Symbol>dydFOlxfQVxSUEFfQ29kZXNfQWR2XENpdHJpeEFwcFxNYWluLnhhbWwrPQOzAQ4CAQE+BVUQAgElVgWxARACAQI/B1QYAgEmWgevARgCAQM/lgI/hgMCASxFDVEYAgEnWuYBWtECAgEkYA2rARgCAQRGD1AfAgEoYQ9sHwIBIG0Pch0CAR1zD34fAgEZfw+EAR0CARaFAQ+QAR8CARKRAQ+cAR8CAQ6dAQ+iAR0CAQujAQ+oASUCAQepAQ+pAX0CAQVLPUtCAgErSC5IMQIBKUg6SD0CASpmPWZCAgEjYy5jMgIBIWM7Yz8CASJvogFv8AECAR9thAJtiwICAR54PXhCAgEcdS51MgIBGnU7dT8CARuBAaIBgQHwAQIBGH+EAn+UAgIBF4oBPYoBQgIBFYcBLocBMQIBE4cBOocBPgIBFJYBPZYBQgIBEZMBLpMBMgIBD5MBO5MBPwIBEJ8BogGfAfABAgENnQGEAp0BrQICAQyjAWqjAXACAQqlAUKlAVQCAQipATipAUwCAQY=</sads:DebugSymbol.Symbol>
+  </Sequence>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData Id="ClickImage_6" sap:VirtualizedContainerService.HintSize="314,106" />
+      <sap2010:ViewStateData Id="Sequence_12" sap:VirtualizedContainerService.HintSize="336,230">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="WindowScope_4" sap:VirtualizedContainerService.HintSize="200,51">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="Sequence_13" sap:VirtualizedContainerService.HintSize="436,51">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="ClickImage_8" sap:VirtualizedContainerService.HintSize="314,106" />
+      <sap2010:ViewStateData Id="TypeInto_8" sap:VirtualizedContainerService.HintSize="314,134" />
+      <sap2010:ViewStateData Id="ClickImage_9" sap:VirtualizedContainerService.HintSize="314,106" />
+      <sap2010:ViewStateData Id="TypeInto_9" sap:VirtualizedContainerService.HintSize="314,134" />
+      <sap2010:ViewStateData Id="ClickImage_10" sap:VirtualizedContainerService.HintSize="314,106" />
+      <sap2010:ViewStateData Id="ClickImage_11" sap:VirtualizedContainerService.HintSize="314,106" />
+      <sap2010:ViewStateData Id="TypeInto_10" sap:VirtualizedContainerService.HintSize="314,134" />
+      <sap2010:ViewStateData Id="CopySelectedText_3" sap:VirtualizedContainerService.HintSize="314,22" />
+      <sap2010:ViewStateData Id="WriteLine_3" sap:VirtualizedContainerService.HintSize="314,61" />
+      <sap2010:ViewStateData Id="Sequence_22" sap:VirtualizedContainerService.HintSize="336,1353">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="WindowScope_7" sap:VirtualizedContainerService.HintSize="414,1499" />
+      <sap2010:ViewStateData Id="Sequence_23" sap:VirtualizedContainerService.HintSize="436,1623">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="Sequence_7" sap:VirtualizedContainerService.HintSize="458,1838">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="Main_1" sap:VirtualizedContainerService.HintSize="498,1918" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+</Activity>

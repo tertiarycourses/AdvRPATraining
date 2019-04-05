@@ -1,0 +1,27 @@
+{
+  "name": "readpdffilesinfolder",
+  "description": "Project",
+  "main": "Test_ReadPdfFiles.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.4.6863.30657]",
+    "UiPath.Mail.Activities": "[1.2.6863.29868]",
+    "UiPath.System.Activities": "[18.3.6877.28276]",
+    "UiPath.UIAutomation.Activities": "[18.3.6877.28298]",
+    "UiPath.PDF.Activities": "[1.2.6863.34697]"
+  },
+  "schemaVersion": "3.2",
+  "studioVersion": "18.2",
+  "projectVersion": "1.0.6833.35581",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ]
+  },
+  "projectType": "Workflow",
+  "libraryOptions": {
+    "includeOriginalXaml": false,
+    "privateWorkflows": []
+  }
+}
